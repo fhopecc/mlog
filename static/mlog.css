@@ -1,0 +1,128 @@
+#sidebar {float:left;width:9.5%}
+#content {padding: 0 0 0 0}
+
+a.link_to_detail:link {color:black;text-decoration:none}
+a.link_to_detail:visited {color:black;text-decoration:none}
+a.link_to_detail:hover {background:white;color:blue;text-decoration:none}
+a.link_to_detail:active {color:medianorchid;text-decoration:none}
+#right_content {float: right;width:10%}
+#tools {padding-top:2%;float:left;width:20%} /*Left content*/
+#tag_selectors {width:80%;}
+#tag_selectors a {color:blue;text-decoration:none}
+.number {text-align:right}
+.negative {text-align:right;color:red}
+.operation a{color:red;text-decoration:none}
+.formError {color:white;background-color:red}
+table {padding-left:1.5%;text-align:left;font-size:medium}
+th {color:green;font-weight:bold;border-bottom:1px dashed orange}
+b {color:green;font-weight:bold}
+tr.even {background-color:whitesmoke}
+.topbar_button {float:right;color:red;
+                border-left:1px solid orange}
+.form tr th {border-bottom:none}
+.form tr td {background-color:whitesmoke}
+.topbar_button a:link {color:red;text-decoration:none}
+.topbar_button a:visited {color:red;text-decoration:none}
+.topbar_button a:hover {background:white;color:blue;text-decoration:none}
+.topbar_button a:active {color:red;text-decoration:none}
+#login {padding-right:10px}
+#lang  {padding-right:10px}
+#system{padding-right:10px}
+#flash {color:white;background:red}
+#logo  {font-weight:bold;color:orangered;
+	      border-bottom:2px solid orange }
+#logo a:link {color:medianorchid;text-decoration:none}
+#logo a:visited {color:medianorchid;text-decoration:none}
+#logo a:hover {background:white;color:blue;text-decoration:none}
+#logo a:active {color:medianorchid;text-decoration:none}
+#tasks {padding-left:30%}
+#tasks a.task:link {color:chocolate;text-decoration:none}
+#tasks a.task:visited {color:chocolate;text-decoration:none}
+#tasks a.task:hover {background:white;color:DarkMagenta;text-decoration:none}
+#tasks a.task:active {color:chocolate;text-decoration:none}
+#tasks a.current_task:link    {color:blue;text-decoration:none}
+#tasks a.current_task:visited {color:blue;text-decoration:none}
+#tasks a.current_task:hover   {background:white;color:blue;text-decoration:none}
+#tasks a.current_task:active  {color:blue;text-decoration:none}
+#mon_selector {padding-left:30%}
+#mon_selector a.mon:link    {color:chocolate;text-decoration:none}
+#mon_selector a.mon:visited {color:chocolate;text-decoration:none}
+#mon_selector a.mon:hover   {background:white;color:DarkMagenta;text-decoration:none}
+#mon_selector a.mon:active  {color:chocolate;text-decoration:none}
+#mon_selector a.current_mon:link {color:DarkMagenta;text-decoration:none;border:1px solid DarkMagenta}
+#mon_selector a.current_mon:visited {color:DarkMagenta;text-decoration:none;border:1px solid DarkMagenta}
+#mon_selector a.current_mon:hover {background:white;color:DarkMagenta;text-decoration:none;border:1px solid DarkMagenta}
+#mon_selector a.current_mon:active {color:DarkMagenta;text-decoration:none;border:1px solid DarkMagenta}
+#operations {float:left;width:9.5%}
+#operations a:link    {color:red;text-decoration:none}
+#operations a:visited {color:red;text-decoration:none}
+#operations a:hover   {color:white;text-decoration:none;background:red}
+#caculator {padding-top:2%;border:1px solid orange}
+#caculator td {text-align:center;border:1px solid orange}
+#caculator td:hover {color:white;background:orange}
+#caculator td:active {text-align:center;border:1px dotted orange}
+#tagtree_form #functions {float:right;padding-right:30%;border:none}
+#form {width:55%;padding-left:30%}
+#expense_table {float:left}
+#income_table {float:left}
+.summary {text-align:center}
+pre {
+  background-color: #eee;
+  padding: 10px;
+}
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	white-space: nowrap;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #333;
+	text-decoration: underline;
+}
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}

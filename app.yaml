@@ -1,0 +1,24 @@
+application: mlogfhopecc
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /mlog.*
+  script: mlog_handler.py
+
+- url: /static
+  static_dir: static
+
+skip_files: |
+ ^(.*/)?(
+ (app\.yaml)|
+ (app\.yml)|
+ (index\.yaml)|
+ (index\.yml)|
+ (#.*#)|
+ (.*~)|
+ (.*\.py[co])|
+ (.*/RCS/.*)|
+ (\..*)|
+ )$

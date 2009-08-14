@@ -1,0 +1,11 @@
+{% extends layout %}
+{% block content %}
+<form action="/mlogs" method="post">
+<input name="account" type="hidden" value="{{m.account}}"/><br/>
+<input name="date" type="text" value= "{{m.date|date:"Ymd"}}"/>
+<input name="value" type="text" value="{{m.value}}"/><br/>
+<input name="tags" type="text"/><br/>
+<textarea name="comment"></textarea><br/>
+<input type="submit" value="建立"/>
+</form>
+{% endblock %}

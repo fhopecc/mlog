@@ -1,0 +1,12 @@
+{% extends layout %}
+{% block content %}
+<table>
+{% for m in ms %}
+  <tr>
+    <td>{{m.date|date:"Ymd"}}</td>
+    <td>{{m.tags}}</td>
+    <td>{{m.value}}</td>
+    <td>{{m.comment}}</td>
+  </tr>
+{% endfor %}
+{% endblock %}
