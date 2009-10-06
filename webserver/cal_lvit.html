@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0040)http://www.kctax.gov.tw/online/o_13.html -->
+<HTML lang="zh-TW"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>土地增值稅試算</TITLE>
+
+
+<LINK rel="govtwsimpledc.xsd" href="http://www.gov.tw/schema/dc/" title="Dublin Core">
+<SCRIPT language="JScript">
+<!--
+  ua=navigator.userAgent;
+  v=navigator.appVersion.substring(0,1);
+
+  function Highlight() {
+    src = event.toElement;
+
+    if (src.tagName == "A") {
+      src.oldcol = src.style.color;
+      src.style.color = "#0000FF";
+    }
+  }
+
+  function Normal() {
+    src=event.fromElement;
+    if (src.tagName == "A") {
+      src.style.color = src.oldcol;
+    }
+  }
+
+//-->
+		</SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD><BODY><H1>估算土地增值稅</H1>
+		
+		
+										  說明：本表估算之稅額，係依土地稅法及其施行細則有關土地增值稅應繳稅額之計算公式估算，僅供概算之用，實際應納稅額仍應以申報時核定之發單資料為準。<BR>
+										  <BR>
+
+						方法一、自行輸入估算土地之下表所列資料後由系統自動估算。<BR>
+						1.不知土地公告現值者，可經由（公告現值查詢）查得相關資料。<BR>
+						2.不知物價指數者，可經由（物價指數查詢）查得相關資料。<BR>
+						方法二、或如無下表所列資料者，可由地政機關提供之連結（http://w4.kcg.gov.tw/landweb/land/callandtax_a.htm）進入估算。
+					
+					<FORM name="landtax" id="Form1">
+				      <TABLE width="75%" border="1" align="center" cellpadding="0" cellspacing="1" bordercolor="#009933" summary="排版表格">
+           <CAPTION>請輸入下列資料(*為必填欄位，請務必填寫)</CAPTION>
+
+                        <TBODY><TR>
+                          <TD width="39%">
+                          <DIV align="right"><LABEL for="Text1">土地公告現值</LABEL></DIV></TD>
+                          <TD valign="top" width="61%"><INPUT name="T1" id="Text1" value="0">
+      元/每平方公尺 (公告現值查詢，由高市地政處提供)</TD>
+                        </TR>
+                        <TR>
+                          <TD height="2%">
+                          <DIV align="right"><LABEL for="Text2">原規定地價或前次移轉現值</LABEL></DIV></TD>
+                          <TD><INPUT name="T2" id="Text2" value="0">
+      元/每平方公尺</TD>
+                        </TR>
+                        <TR>
+                          <TD width="39%" height="2%" valign="top">
+                          <DIV align="right"><LABEL for="Text3">消費者物價總指數</LABEL></DIV></TD>
+                          <TD valign="top" width="61%"><INPUT name="T3" id="Text3" value="請輸入">
+                           (物價指數查詢) </TD>
+                        </TR>
+                        <TR>
+                          <TD height="2%">
+                          <DIV align="right"><LABEL for="Text4">土地面積</LABEL></DIV></TD>
+                          <TD><INPUT name="T4" id="Text4" value="0">
+      平方公尺</TD>
+                        </TR>
+                        <TR>
+                          <TD height="3%">
+                          <DIV align="right"><LABEL for="Select1">持有年限</LABEL></DIV></TD>
+                          <TD><SELECT name="sel" id="Select1">
+                              <OPTION selected="" value="0">20年以下</OPTION>
+                              <OPTION value="1">20年以上</OPTION>
+                              <OPTION value="2">30年以上</OPTION>
+                              <OPTION value="3">40年以上</OPTION>
+                            </SELECT>
+                          </TD>
+                        </TR>
+                        <TR>
+                          <TD rowspan="2">
+                            <DIV align="right"><BR>
+        移轉或設典範圍</DIV></TD>
+                          <TD width="61%" height="2%" valign="top"><LABEL for="Text5">分子：</LABEL>
+                          <INPUT name="T6" id="Text5" value="1"></TD>
+                        </TR>
+                        <TR>
+                          <TD height="2%">/<LABEL for="Text6">分母：</LABEL>
+                          <INPUT name="T5" id="Text6" value="1"></TD>
+                        </TR>
+                        <TR>
+                          <TH height="3%" colspan="2">
+                            <P align="center">
+                              <INPUT onfocus="taxing()" type="button" value="增值稅估算" name="B1" id="Button1">
+                              <INPUT onfocus="clearing()" type="button" value="清除資料" name="B2" id="Button2">
+							  <INPUT type="button" name="button" value="關閉視窗" onclick="javascript:window.close()" onkeypress="javascript:window.close()"></P></TH>
+                        </TR>
+                        <TR>
+                          <TD height="2%" valign="top">
+                            <DIV align="right"><LABEL for="Text9">一般土地應納稅額：</LABEL></DIV></TD>
+                          <TD valign="top"><INPUT name="T9" id="Text9" value="0">
+      元</TD>
+                        </TR>
+                        <TR>
+                          <TD height="2%" valign="top" nowrap="">
+                            <DIV align="right"><LABEL for="Text10">自用住宅土地應納稅額：</LABEL></DIV></TD>
+                          <TD valign="top"><INPUT name="T10" id="Text10" value="0">
+      元</TD>
+                        </TR>
+                        <TR>
+                          <TD height="3%" valign="bottom" nowrap="" class="orangedeep1">土地增值稅計算說明：</TD>
+                          <TD valign="top">&nbsp; </TD>
+                        </TR>
+                        <TR>
+                          <TD height="2%" align="right" nowrap=""><DIV align="right">土地增值稅＝</DIV></TD>
+                          <TD valign="top">土地漲價總數額＊稅率－累進差額</TD>
+                        </TR>
+                        <TR>
+                          <TD height="6%" align="right" nowrap=""><DIV align="right">土地漲價總數額＝</DIV></TD>
+                          <TD valign="top">申報土地移轉現值－原規定地價或前次移轉現值＊台灣地區消費者物價總指數／100－(改良土地費用＋工程受益費＋土地重劃負擔總費用）</TD>
+                        </TR>
+                        <TR>
+                          <TD height="2%" align="right" nowrap=""><DIV align="right">自用住宅土地應納稅額＝</DIV></TD>
+                          <TD valign="top">土地漲價總數額 *10% </TD>
+                        </TR>
+                        <TR>
+                          <TD height="3%" align="center" nowrap=""><SPAN class="orangedeep1">一般土地應納稅額</SPAN>＝</TD>
+                          <TD valign="bottom">&nbsp;</TD>
+                        </TR>
+                        <TR>
+                          <TD height="7%" nowrap="">
+                          <DIV align="right">第一級：</DIV></TD>
+                          <TD valign="top"> 應徵稅額=<BR>
+                          土地漲價總數額【超過原規定地價或前次移轉時申報現值(按台灣地區消費者 物價總指數調整後)未達百分之一百者】×稅率(20%) </TD>
+                        </TR>
+                        <TR>
+                          <TD height="25%" nowrap="">
+                          <DIV align="right">第二級：</DIV></TD>
+                          <TD valign="top">應徵稅額=<BR>
+                              土地漲價總數額【超過原規定地價或前次移轉時申報現值(按台灣地區消費者 物價總指數調整後)在百分之一百以上未達百分之二百者】×【稅率(30%)－ [(30%－20%)×減徵率]】－累近差額(按台灣地區消費者物價總指數調整後 之原規定地價或前次移轉時申報現值×A)<P></P>
+                              <P>註：<BR>
+                                持有土地年限未超過20年者，無減徵，A為0.1<BR>
+        持有土地年限超過20年以上者，減徵率為20%，A為0.08<BR>
+        持有土地年限超過30年以上者，減徵率為30%，A為0.07<BR>
+        持有土地年限超過40年以上者，減徵率為40%，A為0.06 </P></TD>
+                        </TR>
+                        <TR>
+                          <TD height="28%" align="center" nowrap="">
+                          <DIV align="right">第三級：</DIV></TD>
+                          <TD valign="top">應徵稅額=<BR>
+                              土地漲價總數額【超過原規定地價或前次移轉時申報現值(按台灣地區消費者 物價總指數調整後)在百分之二百以上者】×【稅率(40%)－[(40%－20%)×減 徵率]】－累近差額(按台灣地區消費者物價總指數調整後之原規定地價或前 次移轉時申報現值×B)<BR>
+註： <BR>
+                                持有土地年限未超過20年者，無減徵，B為0.3<BR>
+        持有土地年限超過20年以上者，減徵率為20%，B為0.24<BR>
+        持有土地年限超過30年以上者，減徵率為30%，B為0.21<BR>
+        持有土地年限超過40年以上者，減徵率為40%，B為0.18 </TD>
+                        </TR>
+                      </TBODY></TABLE>
+					</FORM>
+					<SCRIPT language="JavaScript">
+function taxing()
+{
+  var nowvalue,lastvalue,expvalue,area,bb15_2,bb15_3;
+  var nowtotal,oldtotal,addtotal,tax1,tax9,tax8,tax7,tax3;
+  tax3 = eval(document.landtax.sel.value);
+  //window.alert(tax3);
+  nowvalue=eval(document.landtax.T1.value);
+  lastvalue=eval(document.landtax.T2.value);
+  expvalue=eval(document.landtax.T3.value);
+  area=eval(document.landtax.T4.value);
+  bb15_2=eval(document.landtax.T5.value);
+  bb15_3=eval(document.landtax.T6.value);
+  oldtotal=lastvalue*area*(bb15_3/bb15_2)*(expvalue/100);
+  nowtotal=nowvalue*area*(bb15_3/bb15_2);
+  addtotal=nowtotal-oldtotal;
+  if (addtotal <= 0)  {  addtotal=0; oldtotal = 0  };
+  tax1=addtotal*0.1;
+  switch(tax3){
+  case 0 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.4-oldtotal*0.3  }
+           else
+           {
+            if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.3-oldtotal*0.1  }
+           else  {  tax9=addtotal*0.2  }
+           }
+          
+           document.landtax.T9.value=Math.round(tax9);
+           
+           } break;
+  case 1 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.36-oldtotal*0.24  }
+           else
+           {
+           if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.28-oldtotal*0.08  }
+           else  {  tax9=addtotal*0.2  }
+           }
+             document.landtax.T9.value=Math.round(tax9);
+           
+           } break;
+  case 2 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.34-oldtotal*0.21  }
+           else
+           {
+            if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.27-oldtotal*0.07  }
+           else  {  tax9=addtotal*0.2  }
+           }
+         document.landtax.T9.value=Math.round(tax9);
+           
+           } break;
+  case 3 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.32-oldtotal*0.18  }
+           else
+           {
+            if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.26-oldtotal*0.06  }
+           else  {  tax9=addtotal*0.2  }
+           }
+           document.landtax.T9.value=Math.round(tax9);
+           
+           } break;
+           }
+     document.landtax.T10.value=Math.round(tax1);
+     }
+   
+function clearing()
+{
+  document.landtax.T1.value="";
+  document.landtax.T2.value="";
+  document.landtax.T3.value="";
+  document.landtax.T4.value="";
+  document.landtax.T5.value="";
+  document.landtax.T6.value="";
+  //document.landtax.T7.value="";
+  //document.landtax.T8.value="";
+  document.landtax.T9.value="";
+  document.landtax.T10.value="";
+
+}</SCRIPT>
+	
+
+
+</BODY></HTML>

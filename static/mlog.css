@@ -1,5 +1,5 @@
 #sidebar {float:left;width:9.5%}
-#content {padding: 0 0 0 0}
+#content {padding: 0 0 0 9.5%}
 
 a.link_to_detail:link {color:black;text-decoration:none}
 a.link_to_detail:visited {color:black;text-decoration:none}
