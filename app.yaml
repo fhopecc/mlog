@@ -8,7 +8,7 @@ handlers:
   static_dir: static
 
 - url: /.*
-  script: dispatcher.py 
+  script: lib/google_app_handler.py 
 
 skip_files: |
  ^(.*/)?(
