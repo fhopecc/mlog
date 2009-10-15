@@ -1,7 +1,7 @@
-def index(request, response):
+def index(mes, resp):
     response.out.write('list users')
 
-def show(id, request, response):
+def show(id, mes, resp):
     return "list users %d" % id
 
 def destroy(id):
