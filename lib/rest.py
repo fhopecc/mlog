@@ -27,7 +27,7 @@ def get_name(path, method):
             method= 'create' 
         elif method == 'DELETE':
             method= 'destroy'
-        return (handler, method, int(id)) 
+        return (handler, method, id) 
     else:
         if method == 'GET':
             return (handler, 'index', None) 
@@ -42,6 +42,7 @@ def camelize(underscore):
 def route(path, method, request=None, response=None):
     hn, mn, id = get_name(path, method)
     h = __import__('handler.' + hn, fromlist=['handler'])
+    h = reload(h) # in opt mode, this must be take off
     m = h.__getattribute__(mn)
     if id:
         return m.__call__(id, request, response)
