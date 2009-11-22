@@ -58,7 +58,7 @@ def route(environ, start_response):
     hn, mn, id = get_name(environ['PATH_INFO'], environ['REQUEST_METHOD'], req)
     environ['rest.id'] = id
     h = __import__('handler.' + hn, fromlist=['handler'])
-    h = reload(h)
+    h = reload(h) # in opt mode, this must be take off
     m = h.__getattribute__(mn)
     return m.__call__(environ, start_response)
 
